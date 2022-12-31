@@ -295,7 +295,7 @@ h6 {
 		width: 30px;
 		height: 50px;
     position: relative;
-    left: 5rem;
+    left: 7rem;
     position: flex;
     bottom: 1rem;
 		background-color: lighten(#0f0f1a, 5%);
@@ -449,7 +449,7 @@ h6 {
 
 .header .toggle-sidebar-btn {
   font-size: 32px;
-  padding-left: 10px;
+  padding-left: 100px;
   cursor: pointer;
   color: #012970;
 }
@@ -1288,6 +1288,30 @@ h6 {
     max-width: 50%;
   }
 }
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+.modal{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+  top: 20rem;
+  left: 41rem;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
