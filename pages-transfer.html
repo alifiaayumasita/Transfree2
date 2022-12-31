@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pages / Register - Transfree Bootstrap Template</title>
+  <title>Pages / Quick Transfer - Transfree Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -59,50 +59,65 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
-                    <p class="text-center small">Enter your personal details to create account</p>
+                    <h5 class="card-title text-center pb-0 fs-4">Reciever</h5>
                   </div>
 
                   <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-12">
-                      <label for="yourNumber" class="form-label">Your Number</label>
-                      <input type="text" name="name" class="form-control" id="yourNumber" required>
-                      <div class="invalid-feedback">Please, enter your number!</div>
-                    </div>
 
                     <div class="col-12">
-                      <label for="yourEmail" class="form-label">Your Email</label>
-                      <input type="email" name="email" class="form-control" id="yourEmail" required>
-                      <div class="invalid-feedback">Please enter a valid Email adddress!</div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="yourUsername" class="form-label">Username</label>
+                      <label for="yourNoRek" class="form-label">Bank</label>
                       <div class="input-group has-validation">
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
-                        <div class="invalid-feedback">Please choose a username.</div>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Select the Bank</option>
+                          <option value="1">BANK RAKYAT INDONESIA</option>
+                          <option value="2">BANK MANDIRI</option>
+                          <option value="3">BANK NEGARA INDONESIA</option>
+                        </select>
+                        <div class="invalid-feedback">Please enter the bank!</div>
                       </div>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
-                      <div class="invalid-feedback">Please enter your password!</div>
+                      <label for="yourNoRek" class="form-label">Account Number</label>
+                      <div class="input-group has-validation">
+                        <input type="number" name="username" class="form-control" id="yourNoRek" required>
+                        <div class="invalid-feedback">Please enter the account number!</div>
+                      </div>
                     </div>
 
                     <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
-                        <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
-                        <div class="invalid-feedback">You must agree before submitting.</div>
+                      <label for="yourNominal" class="form-label">Amount</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text">Rp</span>
+                        <input type="number" name="username" class="form-control" id="yourNominal" required aria-label="Amount (to the nearest rupiah)">
+                        <span class="input-group-text">.00</span>
+                        <div class="invalid-feedback">Please enter the amount!</div>
                       </div>
                     </div>
-                    <div class="col-12">
-                      <input type="button" onclick="window.location.href='pages-login.html'" class="btn btn-primary w-100" value="Create Account"/>
+
+                    <div class="pt-0 pb-0">
+                      <h5 class="card-title text-center pb-0 fs-4">Sender</h5>
                     </div>
+
                     <div class="col-12">
-                      <p class="small mb-0">Already have an account? <a href="pages-login.html">Log in</a></p>
+                      <label for="yourName" class="form-label">Sender name</label>
+                      <input type="text" name="username" class="form-control" id="yourName" required>
+                      <div class="invalid-feedback">Please enter your name!</div>
                     </div>
+
+                    <div class="col-12">
+                      <label for="yourName" class="form-label">Notes</label>
+                      <textarea class="form-control" style="height: 100px"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <input type="button" onclick="window.location.href='pages-free-payment.html'" class="btn btn-primary w-100" value="Free Payment Account"/>
+                    </div>
+
+                    <div class="col-12">
+                      <input type="button" onclick="window.location.href='pages-premium-payment.html'" class="btn btn-primary w-100" value="Premium Payment Account"/>
+                    </div>
+
                   </form>
 
                 </div>

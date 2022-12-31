@@ -65,7 +65,7 @@
                   
                   <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
                     
-                    <form class="row g-3 needs-validation" novalidate>
+                    <form class="row g-3 needs-validation" novalidate >
                       <input type="text" id="digit-1" name="digit-1" maxlength="1" />
                       <input type="text" id="digit-2" name="digit-2" maxlength="1" />
                       <input type="text" id="digit-3" name="digit-3" maxlength="1" />
@@ -77,7 +77,15 @@
                     </script>
 
                     <div class="col-12">
-                      <input type="button" onclick="window.location.href='index.html'" class="btn btn-primary w-100" value="Verify"/>
+                      <button class="modal-open btn btn-primary w-100" data-modal="modal-succes">Verify</button>
+                    </div>
+
+                    <!--Modal-->
+                    <div class="modal" id="modal-succes">
+                      <div class="modal-content">
+                        <div class="modal-body text-center"><img src="./assets/img/checkmark.png"><p>Your transaction was successful!</p></div>
+                        <div class="modal-footer"><button class="btn btn-primary w-100" onclick="window.location.href='pages-login.html'">Back</button></div>
+                      </div>
                     </div>
 
                   </form>
